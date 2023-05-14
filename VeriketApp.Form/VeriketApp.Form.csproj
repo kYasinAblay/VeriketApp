@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nito.AsyncEx" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo\Veriket.WinService.csproj" />
+  </ItemGroup>
+
+    <!--<Target Name="ILMerge">
+	    --><!-- the ILMergePath property points to the location of ILMerge.exe console application --><!--
+	    <Exec Command="$(ILMergeConsolePath) bin\Release\net6.0-windows\Veriket.WinService.exe /out:VeriketApp.Form.exe bin\Release\net6.0-windows\VeriketApp.Form.dll bin\Release\net6.0\Veriket.WinService.dll" />
+    </Target>-->
+</Project>
